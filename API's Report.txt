@@ -1,3 +1,58 @@
+Layered architecture:
+
+(Presentation Layer (UI Layer)):
+Purpose: The presentation layer is responsible for handling user interactions and presenting information to the user.
+
+Responsibilities:
+Displaying the user interface (UI).
+Accepting input from the user (e.g., keyboard, mouse).
+Communicating with the business logic layer to process user requests.
+Passing user input to the business logic layer and showing the results (e.g., success messages, errors).
+
+Components:
+Web pages (HTML, JSP, ASP.NET).
+Desktop application forms (WPF, WinForms).
+Mobile application screens (Android, iOS).
+
+Examples: A web page displaying a form where users can enter their details, or a mobile app screen that shows a list of items.
+
+
+(Business Logic Layer (BLL)):
+
+Purpose: The business logic layer contains the core functionality and logic of the application. It handles the actual processing of data based on business rules.
+
+Responsibilities:
+Implementing business rules and logic.
+Processing data received from the presentation layer and performing necessary calculations or operations.
+Interfacing with the data access layer to retrieve and save data.
+Ensuring the data integrity and validation of the business rules.
+
+Components:
+Service classes, business objects, or controllers.
+Functions to process or transform data.
+
+Examples: In an e-commerce application, the BLL may handle processes like calculating discounts, managing inventory, or determining shipping costs.
+
+
+Data Access Layer (DAL):
+
+Purpose: The data access layer is responsible for managing the application's data access. It communicates with the database or other data sources and provides data to the business logic layer.
+
+Responsibilities:
+Performing CRUD (Create, Read, Update, Delete) operations on the database or other data storage systems.
+Abstracting the details of how data is stored and retrieved.
+Ensuring that data is retrieved efficiently and securely.
+Handling transactions and connection management to the database.
+
+Components:
+Data access objects (DAOs), repositories, or entity models.
+SQL queries or Object-Relational Mapping (ORM) frameworks (e.g., Hibernate, Entity Framework).
+
+Examples: Retrieving user data from a relational database or saving product details to a NoSQL database.
+
+
+
+
 The difference between HTTP and HTTPS:
 
 HTTP (HyperText Transfer Protocol): It is the basic protocol used for transferring data over the web. HTTP defines how messages are formatted and transmitted between browsers (clients) and web servers. However, HTTP is not encrypted, so the data transmitted over an HTTP connection can be intercepted by third parties, and it uses port number (80).
